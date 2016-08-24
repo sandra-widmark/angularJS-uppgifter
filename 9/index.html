@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add staff</title>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myController">
+        <h1>Add staff</h1>
+        <label>Staff name</label><input ng-model='name' type='text'></input>
+        <label>Age</label><input ng-model='age' type='text'></input>
+        <a ng-click ='addStaff()'>Add staff</a>
+        <table>
+          <tr>
+            <th>Staff name</th>
+            <th>Age</th>
+          </tr>
+          <tr ng-repeat="staff in staff track by $index">
+            <td>{{ staff.name }}</td>
+            <td>{{ staff.age }}</td>
+          </tr>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>

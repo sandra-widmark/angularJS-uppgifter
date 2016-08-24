@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>animal-animals</title>
+</head>
+<body ng-app="animalAnimals">
+    <div ng-controller="myController">
+        <h1>Animals</h1>
+        <table>
+          <tr>
+            <th>Animal</th>
+            <th>Name</th>
+            <th>Weight</th>
+            <th>color</th>
+          </tr>
+          <tr ng-repeat="animal in animals">
+            <td>{{ animal.animal}}</td>
+            <td>{{ animal.name }}</td>
+            <td>{{ animal.weight }}</td>
+            <td>{{ animal.color }}</td>
+          </tr>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>

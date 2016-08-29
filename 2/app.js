@@ -2,6 +2,8 @@ var app = angular.module('myApp', []);
 
 app.controller('myController', function($scope){
     $scope.helloWorld = function() {
-        console.log('Hello world!');
+        var words = ["hello", "world", "you", "are", "beautiful", "today", "I", "think"];
+        var word = words[Math.floor(Math.random() * words.length)];
+        console.log(word);
     }
 });

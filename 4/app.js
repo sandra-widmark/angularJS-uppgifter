@@ -5,4 +5,7 @@ app.controller('myController', function($scope){
     $scope.increaseValue = function(){
         $scope.myVariable++;
     }
+    $scope.decreaseValue = function(){
+    $scope.myVariable--;
+    }
 });

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+</head>
+<body ng-app="getData">
+    <div ng-controller="myController" ng-init='blogLoader()'>
+        <h1>Blog</h1>
+        <div ng-repeat ="post in posts">
+            <h1>{{post.title}}</h1>
+            <p>{{post.author}}</p>
+            <p>{{post.date}}</p>
+            <p>{{post.text}}</p>
+            <p>{{post.tags}}</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
